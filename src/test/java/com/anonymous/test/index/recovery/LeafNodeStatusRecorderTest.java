@@ -106,7 +106,7 @@ public class LeafNodeStatusRecorderTest {
     @Test
     public void checkAndFlushLeafNodeDisk() {
         List<LeafNode> leafNodes = generateTestLeafNodes();
-        DiskDriver diskDriver = new DiskDriver("/home/yangguo/IdeaProjects/trajectory-index/recovery-test");
+        DiskDriver diskDriver = new DiskDriver("/home/anonymous/IdeaProjects/trajectory-index/recovery-test");
         LeafNodeStatusRecorder recorder = new LeafNodeStatusRecorder(diskDriver);
         for (LeafNode node : leafNodes) {
             recorder.addFullLeafNode(node);

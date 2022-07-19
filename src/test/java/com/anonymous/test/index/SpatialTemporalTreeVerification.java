@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author yangguo
+ * @author anonymous
  * @create 2021-12-28 8:47 PM
  **/
 public class SpatialTemporalTreeVerification {

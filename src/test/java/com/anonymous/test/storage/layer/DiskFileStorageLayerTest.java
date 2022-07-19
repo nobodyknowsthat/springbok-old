@@ -21,7 +21,7 @@ public class DiskFileStorageLayerTest {
     @Test
     public void put() {
 
-        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(null,"/home/yangguo/IdeaProjects/trajectory-index/flush-test", 0, 0);
+        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(null,"/home/anonymous/IdeaProjects/trajectory-index/flush-test", 0, 0);
 
         tieredCloudStorageManager.getStorageLayerMap().put(StorageLayerName.EBS, diskFileStorageLayer);
         tieredCloudStorageManager.getStorageLayerHierarchyNameList().add(StorageLayerName.EBS);
@@ -37,7 +37,7 @@ public class DiskFileStorageLayerTest {
 
     @Test
     public void get() {
-        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(null, "/home/yangguo/IdeaProjects/trajectory-index/flush-test", 0, 0);
+        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(null, "/home/anonymous/IdeaProjects/trajectory-index/flush-test", 0, 0);
 
         tieredCloudStorageManager.getStorageLayerMap().put(StorageLayerName.EBS, diskFileStorageLayer);
         tieredCloudStorageManager.getStorageLayerHierarchyNameList().add(StorageLayerName.EBS);
@@ -55,7 +55,7 @@ public class DiskFileStorageLayerTest {
 
     @Test
     public void batchPut() {
-        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(null, "/home/yangguo/IdeaProjects/trajectory-index/flush-test", 0, 0);
+        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(null, "/home/anonymous/IdeaProjects/trajectory-index/flush-test", 0, 0);
 
         tieredCloudStorageManager.getStorageLayerMap().put(StorageLayerName.EBS, diskFileStorageLayer);
         tieredCloudStorageManager.getStorageLayerHierarchyNameList().add(StorageLayerName.EBS);
@@ -82,7 +82,7 @@ public class DiskFileStorageLayerTest {
     @Test
     public void clearAll() {
 
-        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(null, "/home/yangguo/IdeaProjects/trajectory-index/flush-test", 0, 0);
+        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(null, "/home/anonymous/IdeaProjects/trajectory-index/flush-test", 0, 0);
 
         tieredCloudStorageManager.getStorageLayerMap().put(StorageLayerName.EBS, diskFileStorageLayer);
         tieredCloudStorageManager.getStorageLayerHierarchyNameList().add(StorageLayerName.EBS);
@@ -100,7 +100,7 @@ public class DiskFileStorageLayerTest {
 
     @Test
     public void clear() {
-        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(null, "/home/yangguo/IdeaProjects/trajectory-index/flush-test", 0, 0);
+        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(null, "/home/anonymous/IdeaProjects/trajectory-index/flush-test", 0, 0);
 
         tieredCloudStorageManager.getStorageLayerMap().put(StorageLayerName.EBS, diskFileStorageLayer);
         tieredCloudStorageManager.getStorageLayerHierarchyNameList().add(StorageLayerName.EBS);
@@ -126,7 +126,7 @@ public class DiskFileStorageLayerTest {
         Region region = Region.AP_EAST_1;
         S3LayoutSchema layoutSchema = new S3LayoutSchema(S3LayoutSchemaName.DIRECT);
         FlushPolicy flushPolicy = new ToS3FlushPolicy(layoutSchema);
-        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(flushPolicy, "/home/yangguo/IdeaProjects/trajectory-index/flush-test", 0, 0);
+        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(flushPolicy, "/home/anonymous/IdeaProjects/trajectory-index/flush-test", 0, 0);
         ObjectStoreStorageLayer objectStoreStorageLayer = new ObjectStoreStorageLayer(null, bucketName, region, layoutSchema);
 
 
@@ -152,7 +152,7 @@ public class DiskFileStorageLayerTest {
         Region region = Region.AP_EAST_1;
         S3LayoutSchema layoutSchema = new S3LayoutSchema(S3LayoutSchemaName.SPATIO_TEMPORAL);
         FlushPolicy flushPolicy = new ToS3FlushPolicy(layoutSchema);
-        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(flushPolicy, "/home/yangguo/IdeaProjects/trajectory-index/flush-test", 0, 0);
+        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(flushPolicy, "/home/anonymous/IdeaProjects/trajectory-index/flush-test", 0, 0);
         ObjectStoreStorageLayer objectStoreStorageLayer = new ObjectStoreStorageLayer(null, bucketName, region, layoutSchema);
 
 

@@ -23,7 +23,7 @@ public class ToS3FlushPolicyTest {
 
         S3LayoutSchema layoutSchema = new S3LayoutSchema(S3LayoutSchemaName.SPATIO_TEMPORAL, 1, 10);
         ToS3FlushPolicy flushPolicy = new ToS3FlushPolicy(layoutSchema);
-        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(flushPolicy, "/home/yangguo/IdeaProjects/trajectory-index/flush-test", 0, 0);
+        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(flushPolicy, "/home/anonymous/IdeaProjects/trajectory-index/flush-test", 0, 0);
         ObjectStoreStorageLayer objectStoreStorageLayer = new ObjectStoreStorageLayer(null, bucketName, region, layoutSchema);
 
         TieredCloudStorageManager tieredCloudStorageManager = new TieredCloudStorageManager();
@@ -54,7 +54,7 @@ public class ToS3FlushPolicyTest {
 
         S3LayoutSchema layoutSchema = new S3LayoutSchema(S3LayoutSchemaName.SINGLE_TRAJECTORY, 10);
         ToS3FlushPolicy flushPolicy = new ToS3FlushPolicy(layoutSchema);
-        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(flushPolicy, "/home/yangguo/IdeaProjects/trajectory-index/flush-test", 0, 0);
+        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(flushPolicy, "/home/anonymous/IdeaProjects/trajectory-index/flush-test", 0, 0);
         ObjectStoreStorageLayer objectStoreStorageLayer = new ObjectStoreStorageLayer(null, bucketName, region, layoutSchema);
 
         TieredCloudStorageManager tieredCloudStorageManager = new TieredCloudStorageManager();
@@ -86,7 +86,7 @@ public class ToS3FlushPolicyTest {
 
         S3LayoutSchema layoutSchema = new S3LayoutSchema(S3LayoutSchemaName.SPATIO_TEMPORAL, 10);
         ToS3FlushPolicy flushPolicy = new ToS3FlushPolicy(layoutSchema);
-        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(flushPolicy, "/home/yangguo/IdeaProjects/trajectory-index/flush-test", 0, 0);
+        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(flushPolicy, "/home/anonymous/IdeaProjects/trajectory-index/flush-test", 0, 0);
         ObjectStoreStorageLayer objectStoreStorageLayer = new ObjectStoreStorageLayer(null, bucketName, region, layoutSchema);
 
         TieredCloudStorageManager tieredCloudStorageManager = new TieredCloudStorageManager();

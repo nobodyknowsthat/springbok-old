@@ -75,7 +75,7 @@ public class ImmutableMemoryStorageLayerTest {
     public void flush() {
         ToDiskFlushPolicy toDiskFlushPolicy = new ToDiskFlushPolicy();
         ImmutableMemoryStorageLayer immutableMemoryStorageLayer = new ImmutableMemoryStorageLayer(toDiskFlushPolicy, 2, 1000 * 60 * 60);
-        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(null, "/home/yangguo/IdeaProjects/trajectory-index/flush-test", 0, 0);
+        DiskFileStorageLayer diskFileStorageLayer = new DiskFileStorageLayer(null, "/home/anonymous/IdeaProjects/trajectory-index/flush-test", 0, 0);
 
         tieredCloudStorageManager.getStorageLayerMap().put(StorageLayerName.IMMUTABLEMEM, immutableMemoryStorageLayer);
         tieredCloudStorageManager.getStorageLayerMap().put(StorageLayerName.EBS, diskFileStorageLayer);

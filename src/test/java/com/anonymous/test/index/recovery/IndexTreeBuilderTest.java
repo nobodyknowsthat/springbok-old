@@ -21,7 +21,7 @@ public class IndexTreeBuilderTest {
 
     ObjectStoreDriver objectStoreDriver = new ObjectStoreDriver("flush-test-1111-from-data", Region.AP_EAST_1, "index-test-recovery");
 
-    DiskDriver diskDriver = new DiskDriver("/home/yangguo/IdeaProjects/trajectory-index/recovery-test");
+    DiskDriver diskDriver = new DiskDriver("/home/anonymous/IdeaProjects/trajectory-index/recovery-test");
 
     @Test
     public void flushTreeLeafNodes() {
